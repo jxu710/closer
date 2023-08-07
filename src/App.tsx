@@ -28,7 +28,7 @@ const App: React.FC<RouteComponentProps> = () => {
   const userStatus = useStore((state) => state.userStatus);
   const [loading, setLoading] = React.useState<boolean>(true);
 
-  useTimeout(() => setLoading(false), 1000);
+  useTimeout(() => setLoading(false), 500);
   // use window size to check if has been resized
   const [width, height] = useWindowResize();
 
